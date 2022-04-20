@@ -18,4 +18,3 @@ b = [5,4,3,2,1];
 c = [10,9,8,7,6];
 
 console.log(RotateArray(a, 2));
-console.log(2 % a.length)
