@@ -25,11 +25,20 @@ function sortedSquaredArray(arrayNumbers){
     return newArray;
 }
 
+function sortedSquaredArrayWithMap(array){
+    const newArr = array.map(squaredNumber);
+    function squaredNumber(number){
+        return number * number;
+    }
+    
+    return newArr.sort(function(a,b){return a-b});
+}
+
 
 a = [1,2,3,4];
 b = [-7,-2,3,4,9];
 c = [];
 
-console.log(sortedSquaredArray(a));
-console.log(sortedSquaredArray(b));
-console.log(sortedSquaredArray(c));
+console.log(sortedSquaredArrayWithMap(a));
+console.log(sortedSquaredArrayWithMap(b));
+console.log(sortedSquaredArrayWithMap(c));

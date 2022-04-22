@@ -31,8 +31,18 @@ const rotate = function(nums, k){ //[1,2,3,4,5]
 }
 
 
+function rotateLeft(arr, d){
+    let value = 0
+    for(let i = 0; i < d; i++){
+        value = arr.shift();
+        arr.push(value);
+    }
+    return arr;
+}
+
+
 a = [1,2,3,4,5];
 b = [5,4,3,2,1];
 c = [10,9,8,7,6];
 
-console.log(RotateArray(a, 2));
+console.log(rotateLeft(a, 2));
