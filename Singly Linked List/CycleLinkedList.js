@@ -42,3 +42,4 @@ six.next = two;
 let head = one;
 
 
+console.log(checkLoop(head));
