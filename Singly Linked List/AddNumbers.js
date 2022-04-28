@@ -105,6 +105,7 @@ function add2Numbers(l1, l2) {
         l1 = l1 ? l1.next : null;
         l2 = l2 ? l2.next : null;
     }
+    return results;
 }
 
 const n1 = new SinglyLinkedList();
